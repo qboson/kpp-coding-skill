@@ -1,0 +1,4 @@
+interface:
+  display_name: "KPP 能量模型与训练"
+policy:
+  allow_implicit_invocation: true

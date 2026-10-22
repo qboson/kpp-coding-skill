@@ -64,6 +64,8 @@ BM 与 RBM 的不同训练结构见 [模型范式](references/examples.md)，只
    `KPP_IMPORT_OK` 只证明导入；`KPP_TRAIN_OK` 只证明脚本覆盖的小规模训练。
 
 检查日志、临时文件和验证副本留在任务目录，云端 CIM 仅在任务明确需要且已有配额授权时使用。
+调用 Kaiwu CIM 时，`task_name` 必须以 `kpp-skill` 开头，方便后端统计；
+例如 `kpp-skill-rbm-train`。已有任务名不含此前缀时，在其前面加上 `kpp-skill-`。
 
 ## 训练与生成契约
 

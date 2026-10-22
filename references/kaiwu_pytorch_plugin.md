@@ -127,7 +127,7 @@ Enterprise 版本变化：KPP 0.3.0 锁定的 1.3.1 在 `kw.cim`，独立的 SDK
 ```python
 import kaiwu as kw
 
-base = kw.cim.CIMOptimizer(task_name="user_supplied_task", wait=True)
+base = kw.cim.CIMOptimizer(task_name="kpp-skill-user_supplied_task", wait=True)
 sampler = PrecisionReducer(   # 从与版本匹配的模块导入
     base, precision=8, truncated_precision=20, target_bits=550,
     only_feasible_solution=False,

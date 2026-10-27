@@ -1,18 +1,17 @@
 # KPP Skill 安装与使用
 
-此目录是可独立交付的完整 Skill，包含操作说明、参考示例、助手显示信息和环境验证脚本。
-不需要安装或复制 `benchmark-kpp`。
+此目录是可独立交付的完整 Skill，包含操作说明、参考示例、助手显示信息和环境验证脚本，不需要安装或复制 `benchmark-kpp`。
 
 ## 安装
 
-将整个 `kpp-coding-skill` 文件夹导入所用助手的 Skill 目录，保留文件名和目录结构。
-安装后可明确要求助手使用 `kpp-skill`；支持自动选择 Skill 的助手也可按任务选择它。
+将整个 `kpp-coding-skill` 文件夹导入所用助手的 Skill 目录，保留文件名和目录结构；
+安装后可明确要求助手使用 `kpp-skill`，支持自动选择 Skill 的助手也可按任务选择它；
 不要只复制 `SKILL.md`，它引用的 `references/` 和 `scripts/` 必须一起保留。
 
 ## 使用条件
 
-Skill 文件本身无需安装 Python 依赖。实际运行 KPP 模型时，需要项目的 Python 环境和
-`kaiwu-torch-plugin`。已经验证的 KPP 0.3.0 依赖 Kaiwu 1.3.1、PyTorch 2.7.0、
+Skill 文件本身无需安装 Python 依赖，实际运行 KPP 模型时，需要项目的 Python 环境和
+`kaiwu-torch-plugin`；已经验证的 KPP 0.3.0 依赖 Kaiwu 1.3.1、PyTorch 2.7.0、
 NumPy 2.2.6，Kaiwu 1.3.1 只支持 Python 3.10；已有项目不兼容时使用独立的 3.10 环境，按[安装说明](references/kaiwu_pytorch_plugin.md)处理。
 
 在安装后的 Skill 目录中，用目标项目的 Python 检查：
